@@ -1,0 +1,11 @@
+[project]
+name = "dependi-python-yank-reproduction"
+version = "0"
+description = "Code to reproduce the Dependi bug/feature that shows the Yanked version of Python packages"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    # Dependi suggests upgrading to 2024.9.4, which is a yanked version
+    # (As of 2025-04-19)
+    "pyarrow-stubs>=19.1",
+]
